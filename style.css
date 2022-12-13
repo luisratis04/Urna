@@ -51,12 +51,14 @@ html, body {
 .branco {
   height: 30px;
   width: 50px;
+  content: '';
 }
 .laranja {
   height: 30px;
   width: 50px;
   background-color: #e67401;
   margin-left: 40px;
+  content: '';
 }
 .verde {
   height: 30px;
