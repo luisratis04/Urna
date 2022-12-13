@@ -1,0 +1,62 @@
+
+.container{
+  display: flex;
+  background-color: #e1e1e1;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  
+  background-color: blue;
+}
+.cinza{
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-bottom: 59px;    
+  background-color: white;
+  opacity: 50;
+}
+.preto{
+background-color: #2D2D2D;
+height: 463px;
+align-items: center;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+padding-bottom: 80px;
+}
+.bnt{
+margin: 10px;
+align-self: center;
+background-color: black;
+color: snow;
+height: 30px;
+width: 50px;
+}
+
+.teclado2{
+    font-size: 11px;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20px;
+    left: 5px;
+    color: black;
+    padding: 40px;
+  }
+  .branco{
+    height: 30px;
+    width: 50px;
+  
+  }
+  .laranja{
+    height: 30px;
+    width: 50px;
+    background-color: #E67401;
+    margin-left: 40px;
+  }
+  .verde{
+    height: 30px;
+    width: 50px;
+    margin-left: 40px;
+    background-color: green;
+  }
