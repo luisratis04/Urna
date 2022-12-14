@@ -1,59 +1,51 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <title>Votação</title>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="normalize.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="cinza">
-        <p>Seu voto para</p>
-        <h2>Presidente</h2>
-        <p>Número:</p>
-        <form action="">
-          <input
-            size="1"
-            id="campo1"
-            value=""
-            maxlength="1"
-            type="text"
-            readonly="readonly"
-          />
-          <input
-            size="1"
-            id="campo2"
-            value=""
-            maxlength="1"
-            type="text"
-            readonly="readonly"
-          />
-        </form>
-        <p>Nome:</p>
-        <p>Partido:</p>
-      </div>
-      <div class="preto">
-        <button class="bnt click" onclick="">1</button>
-        <button class="bnt click" onclick="">2</button>
-        <button class="bnt click" onclick="">3</button>
-        <button class="bnt click" onclick="">4</button>
-        <button class="bnt click" onclick="">5</button>
-        <button class="bnt click" onclick="">6</button>
-        <button class="bnt click" onclick="">7</button>
-        <button class="bnt click" onclick="">8</button>
-        <button class="bnt click" onclick="">9</button>
-        <span></span>
-        <button class="bnt click" onclick="">0</button>
-        <span></span>
-      </div>
-      <div class="teclado2">
-        <button class="branco click" onclick="branco"></button>
-        <button class="laranja click" onclick="laranja"></button>
-        <button class="verde" onclick="verde"></button>
-      </div>
+
+<head>
+  <title>Votação</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="normalize.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="cinza">
+      <p>Seu voto para</p>
+      <h2>Presidente</h2>
+      <p>Número:</p>
+      <form id="voto-formulario">
+        <input size="1" id="digito-1" maxlength="1" type="number" onfocus="blur();" />
+        <input size="1" id="digito-2" maxlength="1" type="number" onfocus="blur();" />
+      </form>
+      <p>Nome:</p>
+      <p>Partido:</p>
     </div>
-  </body>
+
+    <div class="preto">
+      <button class="bnt click" onclick="addNumber(1)">1</button>
+      <button class="bnt click" onclick="addNumber(2)">2</button>
+      <button class="bnt click" onclick="addNumber(3)">3</button>
+      <button class="bnt click" onclick="addNumber(4)">4</button>
+      <button class="bnt click" onclick="addNumber(5)">5</button>
+      <button class="bnt click" onclick="addNumber(6)">6</button>
+      <button class="bnt click" onclick="addNumber(7)">7</button>
+      <button class="bnt click" onclick="addNumber(8)">8</button>
+      <button class="bnt click" onclick="addNumber(9)">9</button>
+      <span></span>
+      <button class="bnt click" onclick="addNumber(0)">0</button>
+      <span></span>
+    </div>
+    <div class="teclado2">
+      <button class="branco click" onclick="clean()"></button>
+      <button class="laranja click" onclick="clean()"></button>
+      <button class="verde" onclick="vote()"></button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
 </html>
